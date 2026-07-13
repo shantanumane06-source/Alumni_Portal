@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Student Profile</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+            background:#f4f4f4;
+        }
+
+        header{
+            background:#003366;
+            color:white;
+            padding:15px;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:20px;
+            padding:0;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        main{
+            display:flex;
+            padding:20px;
+            gap:20px;
+        }
+
+        article{
+            flex:3;
+            background:white;
+            padding:20px;
+            border-radius:8px;
+        }
+
+        aside{
+            flex:1;
+            background:#e6f2ff;
+            padding:20px;
+            border-radius:8px;
+        }
+
+        figure img{
+            width:180px;
+            border-radius:10px;
+        }
+
+        fieldset{
+            margin-top:30px;
+            padding:20px;
+        }
+
+        label{
+            display:block;
+            margin-top:10px;
+        }
+
+        input,
+        select{
+            width:100%;
+            padding:8px;
+            margin-top:5px;
+        }
+
+        footer{
+            text-align:center;
+            background:#003366;
+            color:white;
+            padding:15px;
+            margin-top:20px;
+        }
+
+        button{
+            margin-top:15px;
+            padding:10px 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Student Profile</h1>
+
+<nav>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<main>
+
+<article>
+
+<h1>Shantanu Mane</h1>
+
+<h2>Student Biography</h2>
+
+<p><strong>Course:</strong> Master of Computer Science</p>
+
+<p><strong>Year Level:</strong> First Year</p>
+
+<p>
+I am a student interested in Web Development,
+Java, Spring Boot, React and DevOps.
+I enjoy learning new technologies and building projects.
+</p>
+
+<figure>
+
+<img src="https://via.placeholder.com/180" alt="Student Photo">
+
+<figcaption>Student Profile Photo</figcaption>
+
+</figure>
+
+<!-- Registration Form -->
+
+<form>
+
+<fieldset>
+
+<legend>Student Registration Form</legend>
+
+<label for="name">Full Name</label>
+<input
+type="text"
+id="name"
+name="name"
+required
+minlength="2">
+
+<label for="email">Student Email</label>
+<input
+type="email"
+id="email"
+name="email"
+required
+autocomplete="email">
+
+<label for="dob">Date of Birth</label>
+<input
+type="date"
+id="dob"
+name="dob"
+max="2026-06-19">
+
+<label for="course">Course</label>
+
+<select id="course" name="course">
+
+<option>BCA</option>
+<option>BSc Computer Science</option>
+<option>MCA</option>
+<option>MCS</option>
+
+</select>
+
+<label for="language">Preferred Language</label>
+
+<input
+list="languages"
+id="language"
+name="language">
+
+<datalist id="languages">
+
+<option value="HTML">
+<option value="CSS">
+<option value="JavaScript">
+<option value="Python">
+<option value="Java">
+
+</datalist>
+
+<label for="password">Password</label>
+
+<input
+type="password"
+id="password"
+name="password"
+required
+minlength="8">
+
+<label for="confirm">Confirm Password</label>
+
+<input
+type="password"
+id="confirm"
+name="confirm"
+required>
+
+<br><br>
+
+<button type="submit">Submit</button>
+
+<button type="reset">Reset</button>
+
+</fieldset>
+
+</form>
+
+</article>
+
+<aside>
+
+<h2>Quick Facts</h2>
+
+<ul>
+
+<li><strong>Favourite Language:</strong> Java</li>
+
+<li><strong>Hobbies:</strong>
+Reading, Coding, Cricket
+</li>
+
+</ul>
+
+</aside>
+
+</main>
+
+<footer>
+
+<p>
+© 2026 Student Profile
+</p>
+
+<p>
+
+Today's Date:
+<time datetime="2026-06-19">
+19 June 2026
+</time>
+
+</p>
+
+</footer>
+
+</body>
+</html>
